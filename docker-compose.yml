@@ -3,11 +3,13 @@ version: '2'
 services:
   sentinel:
     build: 
-      context: sentinel
+      context: .
       args: 
-        - PW=12345678
+        - REQUIREPASS=12345678
         - QUORUM=1
     environment:
+      - REQUIREPASS=12345678
+      - QUORUM=1
       - CLIENTPORT=26479
       - MASTERPORT=6479
       - MASTERHOST=localhost
