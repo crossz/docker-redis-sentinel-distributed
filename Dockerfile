@@ -7,6 +7,7 @@ ENV SENTINEL_QUORUM 2
 ENV CLIENTPORT 26379
 ENV MASTERHOST localhost
 ENV MASTERPORT 6479
+ENV MASTERNAME mymaster
 
 ## sentinel default values, will not appear in the sentinel.conf, but can be replaced from docker-compose
 ENV SENTINEL_DOWN_AFTER 30000

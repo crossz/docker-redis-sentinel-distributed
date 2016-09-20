@@ -9,6 +9,7 @@ services:
       - CLIENTPORT=26479
       - MASTERPORT=6479
       - MASTERHOST=localhost
+      - MASTERNAME=mymaster
     network_mode: "host"
     image: crossz/sentinel-redis-distributed
 
