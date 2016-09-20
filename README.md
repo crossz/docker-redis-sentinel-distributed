@@ -12,17 +12,14 @@ version: '2'
 
 services:
   sentinel:
-    build: 
-      context: sentinel
-      args: 
-        - PW=12345678
-        - QUORUM=1
+    build: .
     environment:
+      - REQUIREPASS=12345678
+      - SENTINEL_QUORUM=1
       - CLIENTPORT=26479
       - MASTERPORT=6479
       - MASTERHOST=localhost
-      - SENTINEL_DOWN_AFTER=5000
-      - SENTINEL_FAILOVER=5000
+      - MASTERNAME=mymaster
     network_mode: "host"
     image: crossz/sentinel-redis-distributed
 
