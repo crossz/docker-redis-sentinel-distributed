@@ -2,11 +2,7 @@ version: '2'
 
 services:
   sentinel:
-    build: 
-      context: .
-#      args: 
-#        - REQUIREPASS=12345678
-#        - SENTINEL_QUORUM=1
+    build: .
     environment:
       - REQUIREPASS=12345678
       - SENTINEL_QUORUM=1
