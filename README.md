@@ -1,6 +1,6 @@
-# The Sentinel for Redis Cluster Distributed
+# The Sentinel image for Redis Distributed Nodes
 
-This image has to be woking along with https://hub.docker.com/r/crossz/redis-sentinel-distributed/
+This is the sentinel image, which works for the evironments with serveral redis master or slave nodes running, i.e. this image has to be woking along with https://hub.docker.com/r/crossz/redis-sentinel-distributed/
 
 
 ## Docker Compose template of Redis cluster
